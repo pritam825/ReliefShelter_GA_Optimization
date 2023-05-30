@@ -1,18 +1,18 @@
 # GA_ReliefShelter
-A terminal based app which selects the most optimal ‘p’ locations for constructing relief shelters in the time of floods, using a genetic algorithm based on features like latitude, longitude, population and expected number of days to submerge. It takes into consideration conflicting objectives like maximisation of a quantity known as population score and minimising the average distance to any shelter, while making sure the cost does not exceed the total budget.
+An application that operates through a terminal and employs a genetic algorithm to identify the best 'p' sites for establishing relief shelters during floods. The algorithm considers various factors such as latitude, longitude, population, and projected duration of submergence. It addresses conflicting goals, such as maximizing a metric called population score and minimizing the average distance to the nearest shelter, while ensuring that the overall cost remains within the allocated budget.
 
 ## Constraints:
 
-* Budget= B crores
-* Population finally accumulated <= K  * (current population)
-* submerged_days(x) >= max( submerged_days(y) for all y)
-* submerged_days(x)>0
+* The allocated budget is B crores.
+* The accumulated population should be less than or equal to K times the current population.
+* The number of days of submergence for a specific location (x) should be greater than or equal to the maximum number of submerged days among all other locations (y).
+* The number of days of submergence for a specific location (x) should be greater than 0.
 
 ## Objectives:
 
-* O1 Maximize the population score i.e an indicator of the number of people saved
-* O2 Minimise the average distance to any relief shelter.
-* O3 Maximize the cost within the budget.
+* O1: Achieve the highest population score, which represents the number of individuals saved.
+* O2: Minimize the average distance to the nearest relief shelter.
+* O3: Optimize the cost to stay within the allocated budget while maximizing its value.
 
 ## Objective Function/Fitness function:
 F= (O1 + O3 )/O2
@@ -31,5 +31,3 @@ F= (O1 + O3 )/O2
 
 ## This is how index.html looks like:
 ![screenshot 223](https://user-images.githubusercontent.com/31369977/47204336-b9c93700-d3a0-11e8-94e6-e51fee0bc367.png)
-
-This project was collectively made by [Sanchit Aggarwal](https://github.com/mr-logix) and [Mansi Breja](https://github.com/MansiBreja) as a part of a 5th Semester course on Genetic Algorithms, NSIT. 
