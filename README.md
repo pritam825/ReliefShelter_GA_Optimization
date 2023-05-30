@@ -30,4 +30,4 @@ F= (O1 + O3 )/O2
 
 
 ## This is how index.html looks like:
-![screenshot 223](https://user-images.githubusercontent.com/31369977/47204336-b9c93700-d3a0-11e8-94e6-e51fee0bc367.png)
+![image](https://github.com/pritam825/ReliefShelter_GA_Optimization/assets/54195688/f8384f27-a62d-4d58-8790-c94f875a1d98)
